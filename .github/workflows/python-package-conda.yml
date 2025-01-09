@@ -36,6 +36,7 @@ jobs:
     - name: Create and activate conda environment
       run: |
         conda create --name myenv python=3.10
+        source $HOME/miniconda/etc/profile.d/conda.sh
         conda activate myenv
         conda env update --file environment.yml --prune
 
